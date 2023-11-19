@@ -1,0 +1,82 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.heading-container{
+  text-align: center;
+  background-color: #5c7c91; /* Background color for the heading container */
+  padding: 20px; /* Add padding for better visual appearance */
+}
+
+
+/* Button container styling */
+.buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons in a column */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Individual button styling */
+.image-generator,
+.my-comic {
+  width: 45%; /* Slightly increased width */
+  margin: 10px; /* Add margin for spacing */
+  padding: 19px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 2px solid #3498db; /* Border color */
+  border-radius: 35px; /* Circular border */
+  transition: background-color 0.3s, color 0.3s; /* Smooth background and text color transition */
+  display: flex;
+  justify-content: flex-end; /* Shift text to the right */
+}
+
+.bt1,
+.bt2 {
+  margin-right: 10px; /* Add space between text and right edge */
+}
+
+/* Button hover effect */
+.image-generator:hover,
+.my-comic:hover {
+  background-color: #3498db; /* Background color on hover */
+  color: #fff; /* Text color on hover */
+}
+
+

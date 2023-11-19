@@ -1,0 +1,40 @@
+/* Style for the input field with class 'desc' */
+.desc {
+    width: 40%; /* Set the width to 40% of the container to match the button */
+    padding: 10px; /* Adjust padding for better alignment with the button */
+    border: 3px solid transparent; /* Increase border size and set it to transparent initially */
+    border-radius: 25px; /* Increase border-radius for more circular edges */
+    transition: border 0.3s; /* Add a transition effect for the border color */
+  }
+  
+
+  /* Rainbow border animation */
+  @keyframes rainbowBorder {
+    0% {
+      border-color: #ff0000;
+    }
+    16% {
+      border-color: #ff8000;
+    }
+    33% {
+      border-color: #ffff00;
+    }
+    50% {
+      border-color: #80ff00;
+    }
+    66% {
+      border-color: #00ff80;
+    }
+    83% {
+      border-color: #0080ff;
+    }
+    100% {
+      border-color: #ff0080;
+    }
+  }
+  
+  /* Apply rainbow border animation to the input field on hover */
+  .desc:hover {
+    animation: rainbowBorder 2s infinite;
+  }
+  
